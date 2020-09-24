@@ -39,7 +39,7 @@ export default () => (
                 <section id="two">
                     <div className="inner">
                         <header className="major">
-                            <h2>Subcribe</h2>
+                            <h2>Join Our Newsletter</h2>
                         </header>
                         <Subscribe />
                     </div>

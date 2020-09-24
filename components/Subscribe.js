@@ -44,11 +44,7 @@ function Subscribe() {
         ref={inputEl}
         type="email"
       />
-      <div>
-        {message
-          ? message
-          : `Subscribe to Pastel Nail Spa's newsletter for the latest updates and offers. Don't worry, this is a no spam zone.`}
-      </div>
+      <br />
       <button type="submit">{'Subscribe Now'}</button>
     </form>
   );
