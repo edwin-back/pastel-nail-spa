@@ -32,12 +32,13 @@ module.exports = {
     )
     return config
   },
+
   // exportPathMap: function(defaultPathMap) {
   //   return {
   //     '/': { page: '/' },
   //     '/landing': { page: '/landing' },
-  //     '/generic': { page: '/generic' },
-  //     '/landing': { page: '/landing' }
+  //     '/gallery': { page: '/gallery' },
+  //     '/elements': { page: '/elements' }
   //   }
   // }
 }

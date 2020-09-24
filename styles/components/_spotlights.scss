@@ -16,7 +16,7 @@
 		> section {
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
-			background-color: desaturate(lighten(_palette(bg-alt), 2), 1);
+			background-color: desaturate(lighten(_palette(bg-alt), 4), 2);
 
 			> .image {
 				background-position: center center;
@@ -73,11 +73,11 @@
 		@include breakpoint(xlarge) {
 			> section {
 				> .image {
-					width: 40%;
+					width: 50%;
 				}
 
 				> .content {
-					width: 60%;
+					width: 50%;
 				}
 			}
 		}
@@ -85,11 +85,11 @@
 		@include breakpoint(large) {
 			> section {
 				> .image {
-					width: 45%;
+					width: 50%;
 				}
 
 				> .content {
-					width: 55%;
+					width: 50%;
 				}
 			}
 		}

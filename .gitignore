@@ -1,7 +1,7 @@
 .DS_Store
 .next
 .vscode
+.env*
 out/
 node_modules
-yarn.lock
 package-lock.json

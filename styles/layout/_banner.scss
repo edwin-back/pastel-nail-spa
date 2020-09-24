@@ -8,7 +8,7 @@
 
 	#banner {
 		@include vendor('align-items', 'center');
-		@include vendor('background-image', 'url("/static/images/banner.jpg")');
+		@include vendor('background-image', 'url("/static/images/salon.jpg")');
 		@include vendor('display', 'flex');
 		@include padding(4em, 0, (2em, 0, 0, 0));
 		background-attachment: fixed;
@@ -26,14 +26,14 @@
 
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
-			@include vendor('transition-delay', '0.75s');
+			@include vendor('transition-delay', '0.50s');
 			@include vendor('pointer-events', 'none');
 			background-color: _palette(bg);
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.60;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -93,9 +93,31 @@
 				}
 			}
 		}
-
+/// Banner Image Classes
 		&.major {
-			height: 75vh;
+			height: 100vh;
+			min-height: 30em;
+			max-height: 50em;
+
+			&.alt {
+				opacity: 0.75;
+			}
+		}
+
+		&.major-about {
+			@include vendor('background-image', 'url("/static/images/suburb.jpg")');
+			height: 100vh;
+			min-height: 30em;
+			max-height: 50em;
+
+			&.alt {
+				opacity: 0.75;
+			}
+		}
+
+		&.major-services {
+			@include vendor('background-image', 'url("/static/images/flowers-table.jpg")');
+			height: 100vh;
 			min-height: 30em;
 			max-height: 50em;
 
